@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col m4">
+    <div class="collection">
+      <a href="#!" class="collection-item active">My Profile</a>
+      <a href="#!" class="collection-item">Friend List</a>
+      <a href="#!" class="collection-item">My Wallet</a>
+      <a href="#!" class="collection-item">Gift Shop</a>
+      <a href="#!" class="collection-item">Wish List</a>
+      <a href="#!" class="collection-item">Invite Friends</a>
+    </div>
+  </div>
+  <div class="col m8">
+    <h5>Your Profile</h5>
+    <div class="row">
+        <div class="row">
+          <div class="col s12">
+            Name: <%= @profile.username %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            Birthday: <%= @profile.birthday %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            Phone Number: <%= @profile.phone %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            Location: <%= @profile.city %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            Email Address: <%= @profile.email %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            Bio: <%= @profile.bio %>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>

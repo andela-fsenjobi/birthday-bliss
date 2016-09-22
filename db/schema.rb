@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160906095839) do
+ActiveRecord::Schema.define(version: 20160922221228) do
+
+  create_table "profiles", force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.text     "bio"
+    t.string   "phone"
+    t.integer  "user_id"
+    t.string   "city"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.date     "birthday"
+    t.index ["email"], name: "index_profiles_on_email", unique: true
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+    t.index ["username"], name: "index_profiles_on_username", unique: true
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
@@ -18,7 +33,6 @@ ActiveRecord::Schema.define(version: 20160906095839) do
     t.string   "name"
     t.string   "oauth_token"
     t.datetime "oauth_expires_at"
-    t.string   "username"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end

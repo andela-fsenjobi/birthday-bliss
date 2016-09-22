@@ -1,0 +1,43 @@
+<%= form_for @profile, url: "/profile" do |f| %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_field :username %>
+      <label for="username">Username</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <label for="birthday">Birthday</label>
+      <%= f.date_field :birthday %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.number_field :phone %>
+      <label for="phone">Phone Number</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_field :city %>
+      <label for="city">City, Country</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.email_field :email %>
+      <label for="email">Email Address</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_area :bio, class:"materialize-textarea" %>
+      <label for="bio">Bio</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.submit "Create Profile", class:"btn" %>
+    </div>
+  </div>
+<% end %>
