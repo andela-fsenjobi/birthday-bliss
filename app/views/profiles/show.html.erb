@@ -1,7 +1,8 @@
 <div class="row">
   <div class="col m4">
     <div class="collection">
-      <a href="#!" class="collection-item active">My Profile</a>
+      <a href="#!" class="collection-item active">‎₦ 20,000</a>
+      <a href="#!" class="collection-item">Profile</a>
       <a href="#!" class="collection-item">Friend List</a>
       <a href="#!" class="collection-item">My Wallet</a>
       <a href="#!" class="collection-item">Gift Shop</a>
@@ -9,7 +10,7 @@
       <a href="#!" class="collection-item">Invite Friends</a>
     </div>
   </div>
-  <div class="col m8">
+  <div class="col m4">
     <h5>Your Profile</h5>
     <div class="row">
         <div class="row">
@@ -44,5 +45,72 @@
         </div>
     </div>
 
+  </div>
+  <div class="col m4">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <img src="<%= @profile.user.image %>" alt="" class="circle">
+        <span class="title"><%= @profile.user.name %></span>
+        <p> @<%= @profile.username %><br />
+          <small><%= @profile.birthday.strftime('%B %d') %></small>
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">add</i></a>
+      </li>
+    </ul>
+
+    <div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= text_area_tag "wiwsh", nil, class:"materialize-textarea" %>
+          <label for="bio">Wish me a happy birthday</label>
+          <%= submit_tag "Send wish", class:"btn" %>
+          <button class="btn"><i class="material-icons">shopping_cart</i> Buy a gift</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="card col l4 m6 s12">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://www.qqxxzx.com/images/gift-images/gift-images-1.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Most Amazing Gift<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">Add to Wishlist</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+
+  <div class="card col l4 m6 s12">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://www.qqxxzx.com/images/gift-images/gift-images-1.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Most Amazing Gift<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">Add to Wishlist</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+
+  <div class="card col l4 m6 s12">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://www.qqxxzx.com/images/gift-images/gift-images-1.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Most Amazing Gift<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">Add to Wishlist</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
   </div>
 </div>
